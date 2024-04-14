@@ -1,31 +1,43 @@
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .login-content {
-    max-width: 300px; /* Ajuste a largura conforme necessário */
-    width: 100%;
-    padding: 20px;
-  }
-  
-  .login-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .login-button {
-    margin-top: 20px;
-  }
-  
-  .login-footer {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  ion-item {
-    --highlight-color-focused: transparent; /* Remove o efeito de destaque no foco */
-  }
-  
+/* Estilo para o título do formulário */
+.form-title {
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  color:black;
+  font-family: 'Agrandir Bold';
+}
+
+/* Estilo para o container dos inputs */
+.input-container {
+  margin-bottom: 20px; /* Espaçamento abaixo do container */
+  background-color: transparent; /* Torna o fundo do container transparente */
+  border: none; /* Remove a borda do container */
+}
+
+/* Estilo para o botão de cadastro */
+.register-button {
+  --background: #CA84E6; /* Cor de fundo do botão */
+  --border-radius: 10px; /* Raio da borda do botão */
+  color: black; /* Cor do texto do botão */
+  font-weight: bold; /* Peso da fonte do texto do botão */
+}
+
+
+/* Estilo para os inputs */
+ion-input {
+  --background: ; /* Cor de fundo dos inputs */
+  --border-radius: 10px; /* Raio da borda dos inputs */
+  --padding-start: 15px; /* Espaçamento interno do input à esquerda */
+  --padding-end: 15px; /* Espaçamento interno do input à direita */
+}
+
+/* Estilo para os inputs quando estão em foco */
+ion-input:focus {
+  --background: #FFFFFF; /* Cor de fundo dos inputs quando estão em foco */
+  --border-color: #FF0000; /* Cor da borda dos inputs quando estão em foco */
+}
+
+/* Estilo para os inputs desabilitados */
+ion-input:disabled {
+  opacity: 0.5; /* Opacidade dos inputs desabilitados */
+}
