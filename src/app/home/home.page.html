@@ -1,86 +1,100 @@
-<ion-toolbar class="toolbar-home">
-  <ion-buttons slot="start">
-    <ion-menu-button auto-hide="false"></ion-menu-button>
-  </ion-buttons>
-  <ion-title>
-    <ion-img src="caminho_da_logo.png" class="logo"></ion-img>
-  </ion-title>
-  <ion-buttons slot="end">
-    <ion-button>
-      <ion-icon name="person-circle-outline"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-</ion-toolbar>
-
-
 <ion-content>
-  <ion-content class="ion-padding">
-    <!-- Container/card com imagem -->
-    <ion-card-title class="card-title">
-      <h1>Você está em...</h1>
-    </ion-card-title>
+  <!---Menu Lateral------>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </ion-menu>
+
+  <!---Toolbar--->
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+
+        <div class="logo-container">
+          <ion-img src="caminho_para_sua_logo" class="logo"></ion-img> 
+        </div>
+
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon slot="icon-only" name="person"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+  <!----Card Pesquisa----->
+  <div class="card-pesquisa">
     <ion-card>
-      <ion-img src="https://i.pinimg.com/564x/2f/1c/4e/2f1c4eba1b149083ceac0f6fdaa3d43e.jpg" alt="Nome do Local"
-        class="card-image"></ion-img>
-
+      <ion-card-header>
+        <div class="card-title">
+          <ion-icon name="globe-outline" class="icon"></ion-icon>
+          <ion-card-title>Para onde vamos?</ion-card-title>
+        </div>  
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-searchbar placeholder="Digite o lugar que deseja ir"></ion-searchbar>
+      </ion-card-content>
     </ion-card>
+  </div>
 
+  <!---Cards----->
+  <div class="popular-now">
+    <div class="now-title">
+      <p>Nesta semana</p>
+      <h1>Salvador, Bahia...</h1>
+    </div>
 
-    <!-- Barra de pesquisa -->
-    <ion-searchbar class="searchbar" placeholder="Pesquisar"></ion-searchbar>
-
-    <!-- Título "Lugares Populares" -->
-    <h2>Lugares Populares</h2>
-
-    <ion-content>
-      <div class="carousel-container">
-        <div class="card-slide" [ngClass]="{ 'active': activeSlide === 1 }">
-
-          <ion-card>
-            <ion-img src="https://i.pinimg.com/736x/21/df/77/21df774675565e7c021cbc1dfd0124e2.jpg" alt="Local 1"
-              class="card-image"></ion-img>
-            <ion-card-header>
-              <ion-card-title>Local 1</ion-card-title>
-            </ion-card-header>
-          </ion-card>
+    <div class="square-container">
+      <div class="square1">
+        <div class="square-header">
+          <h3>Festival do Acarajé</h3>
         </div>
-
-        <div class="card-slide" [ngClass]="{ 'active': activeSlide === 1 }">
-          <ion-card>
-            <ion-img src="url_da_imagem2" alt="Local 2" class="card-image"></ion-img>
-            <ion-card-header>
-              <ion-card-title>Local 2</ion-card-title>
-            </ion-card-header>
-          </ion-card>
+        <div class="square-content"></div>
+        <div class="square-footer">
+          <ion-button fill="clear" class="arrow-button">
+            <ion-icon slot="icon-only" name="arrow-forward-circle" class="arrow-icon"></ion-icon>
+          </ion-button>
         </div>
-
-        <div class="card-slide" [ngClass]="{ 'active': activeSlide === 2 }">
-          <ion-card>
-            <ion-img src="url_da_imagem3" alt="Local 3" class="card-image"></ion-img>
-            <ion-card-header>
-              <ion-card-title>Local 3</ion-card-title>
-            </ion-card-header>
-          </ion-card>
-        </div>
-
-        <div class="card-slide" [ngClass]="{ 'active': activeSlide === 2 }">
-          <ion-card>
-            <ion-img src="url_da_imagem4" alt="Local 4" class="card-image"></ion-img>
-            <ion-card-header>
-              <ion-card-title>Local 4</ion-card-title>
-            </ion-card-header>
-          </ion-card>
-        </div>
-        <!-- Adicione mais cards conforme necessário -->
       </div>
-
-      <div class="nav-buttons">
-        <ion-button (click)="prevSlide()" class="nav-button" fill="clear">
-          <ion-icon name="chevron-back-circle-outline"></ion-icon>
-        </ion-button>
-        <ion-button (click)="nextSlide()" class="nav-button" fill="clear">
-          <ion-icon name="chevron-forward-circle-outline"></ion-icon>
-        </ion-button>
+      
+      <div class="square2">
+        <div class="square-header">
+          <h3>Show de Ivete</h3>
+        </div>
+        <div class="square-content">
+          <p> </p>
+        </div>
+        <div class="square-footer">
+          <ion-button fill="clear" class="arrow-button">
+            <ion-icon slot="icon-only" name="arrow-forward-circle" class="arrow-icon"></ion-icon>
+          </ion-button>
+        </div>
       </div>
+      
+      <div class="square3">
+        <div class="square-header">
+          <h3>Feira de Artes</h3>
+        </div>
+        <div class="square-footer">
+          <ion-button fill="clear" class="arrow-button">
+            <ion-icon slot="icon-only" name="arrow-forward-circle" class="arrow-icon"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </ion-content>
+  <!----Imagem----->
+  <div class="image-container">
+    <img src="https://cdn.discordapp.com/attachments/693184817386487808/1229060555688513607/stamp.png?ex=662e4ed7&is=661bd9d7&hm=8b2b84c3eb68849538eb9b2599f896475e61a2f804f64b16e537bd1b0aa0e87e&" class="centered-image">
+    <ion-button expand="block" class="centered-button">Planeje Sua Viagem</ion-button>
+  </div>
+</ion-content>

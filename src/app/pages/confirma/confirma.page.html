@@ -1,13 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>confirma</ion-title>
+<ion-content>
+  <!-- Toolbar transparente -->
+  <ion-toolbar class="transparent-toolbar">
+    <ion-buttons slot="end">
+      <ion-button class="close-button" fill="clear">
+        <ion-icon class="close"name="close-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">confirma</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <!-- Container com espaço para texto em h1 -->
+  <div class="text-container">
+    <h1>Seu Ticket Gratuito</h1>
+  </div>
+  
+  <!-- Container com espaço para imagem -->
+  <div class="image-container">
+    <img src="https://cdn.discordapp.com/attachments/693184817386487808/1229159223666020423/qual_seu_proximo_destino_2.png?ex=662eaabb&is=661c35bb&hm=e65d5d0a44ef8e7c9d1b9aa42405c7ecf7cebe67c5f002d9a221d768d038c701&" alt="Sua Imagem">
+  </div>
 </ion-content>

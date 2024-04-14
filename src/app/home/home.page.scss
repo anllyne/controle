@@ -1,103 +1,188 @@
-.container {
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid #ccc;
-}
-
-ion-card {
-  margin-bottom: 20px;
-  
-}
-
-.card-title h1 {
-  font-weight: bolder;
-  font-family: 'Chivo';
-  color:#33220F;
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
+ion-content {
+  --background: #FFFCF5;
+  padding-top: 30px; /* Adiciona espaço entre o conteúdo superior e o menu */
+  font-family: 'Agrandir', sans-serif;
 
 }
 
-h2{
-  color:#33220F;
-  font-weight: bolder;
-  font-family: 'Chivo';
+ion-toolbar {
+  --background: clear;
 }
 
-.searchbar{
-  --background: #F06C9B;
-  --color: #FFF7D8;
-  --placeholder-color: #fff7d8;
-  --icon-color: #FFF7D8;
-  --clear-button-color: #FFF7D8;
-
-  --border-radius: 20px;
-
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+  background-color: #FFFCF5;
 }
 
-.carousel-container {
+.logo-container {
   display: flex;
-  overflow-x: hidden;
-}
-
-.card-slide {
-  flex-shrink: 0;
-  width: 100%;
-  transition: transform 0.5s ease;
-}
-
-.nav-button {
-  margin-top: 20px;
-}
-
-.carousel-container {
-  display: flex;
-  overflow-x: hidden;
-}
-
-.nav-buttons {
-  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 20px;
-}
-
-.nav-button {
-  --color:#33220F; /* Cor dos ícones */
-}
-
-
-.card-slide {
-  flex-shrink: 0;
-  width: calc(50% - 20px); /* 50% menos o espaço entre os cards */
-  margin-right: 20px;
-  transition: transform 0.5s ease;
-}
-
-.nav-button {
-  margin-top: 20px;
-}
-
-.active {
-  width: calc(50% + 20px); /* Expande o card ativo */
-}
-
-
-ion-menu-button{
-  color: black; 
-}
-
-.toolbar-home {
-  --background: var(--clear-button-color); // Altera a cor de fundo da barra de ferramentas
-  --ion-color-contrast: #ffffff; // Altera a cor do texto e ícones
+  flex: 1;
+  background-color: #FFFCF5;
 }
 
 .logo {
-  width: 100px; // Ajuste o tamanho da logo conforme necessário
+  max-width: 100px;
+  height: auto;
 }
 
-ion-button {
-  --color: #33220F; // Altera a cor do ícone de perfil
+ion-buttons[slot="end"] {
+  margin-right: 10px;
+}
+
+.card-pesquisa {
+  margin-top: 80px; /* Reduz a margem superior */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+ion-card {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #7EE384;
+  color: #323030;
+  font-family: 'Agrandir Bold', sans-serif;
+}
+
+ion-card-title {
+  color: #323030;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  color: #323030;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 35px;
+}
+
+ion-searchbar {
+  --placeholder-color: black;
+  --icon-color: black;
+  --background: beige;
+  --color: black;
+  --border-radius: 20px;
+}
+
+.popular-now {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.now-title h1 {
+  color: #323030;
+  margin-left: 40px;
+  margin-top: 0px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.now-title p {
+  color: #323030;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.square-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.square1 {
+  position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
+  width: 135px; /* Largura do quadrado */
+  height: 135px; /* Altura do quadrado */
+  background-color: #E37EBE;
+  border-radius: 15px;
+  overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  font-family: 'Agrandir Bold', sans-serif;
+}
+.square2 {
+  position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
+  width: 135px; /* Largura do quadrado */
+  height: 135px; /* Altura do quadrado */
+  background-color: #8FDCF5;
+  border-radius: 15px;
+  overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  font-family: 'Agrandir Bold', sans-serif;
+}
+.square3 {
+  position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
+  width: 135px; /* Largura do quadrado */
+  height: 135px; /* Altura do quadrado */
+  background-color: #F1DD86;
+  border-radius: 15px;
+  overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  font-family: 'Agrandir Bold', sans-serif;
+  
+}
+.square-header {
+  padding: 10px;
+  text-align: left;
+}
+
+.square-header h3 {
+  margin: 0;
+  color: #323030;
+  font-weight: bold;
+}
+
+.square-content {
+  padding: 10px;
+}
+
+.square-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #323030;
+}
+
+.text-area {
+  flex: 1;
+}
+
+.arrow-button {
+  --border-radius: 0;
+}
+
+.arrow-icon {
+  color: #323030;
+  font-weight: 200;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 10px; /* Aumenta a margem superior */
+}
+
+.centered-image {
+  max-width: 100%;
+  max-height: 80vh;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.centered-button {
+  width: 200px;
 }

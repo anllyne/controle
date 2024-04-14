@@ -1,6 +1,23 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+
+@font-face {
+  font-family: 'Agrandir Bold';
+  src: url('../assets/fonts/Agrandir Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('../assets/fonts/Agrandir Regular.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -83,7 +100,8 @@
    */
 
   body {
-      font-family: 'Chivo', sans-serif;
+  
+    
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
@@ -154,7 +172,7 @@
    */
 
   .ios body {
-    --ion-background-color: #FFF7D8;
+    --ion-background-color: #FFFCF5;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;
