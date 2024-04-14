@@ -1,0 +1,31 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .login-content {
+    max-width: 300px; /* Ajuste a largura conforme necessário */
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-button {
+    margin-top: 20px;
+  }
+  
+  .login-footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  ion-item {
+    --highlight-color-focused: transparent; /* Remove o efeito de destaque no foco */
+  }
+  

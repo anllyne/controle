@@ -1,0 +1,33 @@
+<ion-content class="ion-padding">
+  <div class="login-container">
+    <div class="login-content">
+      <h2 class="login-title">Cadastro</h2>
+      <form>
+        <ion-item>
+          <ion-label position="stacked">Nome</ion-label>
+          <ion-input type="text" name="name" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Sobrenome</ion-label>
+          <ion-input type="text" name="surname" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">E-mail</ion-label>
+          <ion-input type="email" name="email" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Senha</ion-label>
+          <ion-input type="password" name="password" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Confirmar Senha</ion-label>
+          <ion-input type="password" name="confirmPassword" required></ion-input>
+        </ion-item>
+        <ion-button expand="block" color="primary" class="login-button">Cadastrar</ion-button>
+      </form>
+      <div class="login-footer">
+        <p>Já tem uma conta? Faça <a routerLink="/login">login</a></p>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,27 +1,103 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.container {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-card {
+  margin-bottom: 20px;
+  
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.card-title h1 {
+  font-weight: bolder;
+  font-family: 'Chivo';
+  color:#33220F;
 }
 
-#container a {
-  text-decoration: none;
+.card-image {
+  width: 100%;
+  height: auto;
+
+}
+
+h2{
+  color:#33220F;
+  font-weight: bolder;
+  font-family: 'Chivo';
+}
+
+.searchbar{
+  --background: #F06C9B;
+  --color: #FFF7D8;
+  --placeholder-color: #fff7d8;
+  --icon-color: #FFF7D8;
+  --clear-button-color: #FFF7D8;
+
+  --border-radius: 20px;
+
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.card-slide {
+  flex-shrink: 0;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.nav-button {
+  margin-top: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-button {
+  --color:#33220F; /* Cor dos ícones */
+}
+
+
+.card-slide {
+  flex-shrink: 0;
+  width: calc(50% - 20px); /* 50% menos o espaço entre os cards */
+  margin-right: 20px;
+  transition: transform 0.5s ease;
+}
+
+.nav-button {
+  margin-top: 20px;
+}
+
+.active {
+  width: calc(50% + 20px); /* Expande o card ativo */
+}
+
+
+ion-menu-button{
+  color: black; 
+}
+
+.toolbar-home {
+  --background: var(--clear-button-color); // Altera a cor de fundo da barra de ferramentas
+  --ion-color-contrast: #ffffff; // Altera a cor do texto e ícones
+}
+
+.logo {
+  width: 100px; // Ajuste o tamanho da logo conforme necessário
+}
+
+ion-button {
+  --color: #33220F; // Altera a cor do ícone de perfil
 }
