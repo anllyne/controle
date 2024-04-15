@@ -100,18 +100,19 @@ ion-searchbar {
 }
 .square1 {
   position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
-  width: 135px; /* Largura do quadrado */
-  height: 135px; /* Altura do quadrado */
+  width: 125px; /* Largura do quadrado */
+  height: 125px; /* Altura do quadrado */
   background-color: #E37EBE;
   border-radius: 15px;
   overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
   font-family: 'Agrandir Bold', sans-serif;
+  
 }
 .square2 {
   position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
-  width: 135px; /* Largura do quadrado */
-  height: 135px; /* Altura do quadrado */
+  width: 125px; /* Largura do quadrado */
+  height: 125px; /* Altura do quadrado */
   background-color: #8FDCF5;
   border-radius: 15px;
   overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
@@ -120,8 +121,8 @@ ion-searchbar {
 }
 .square3 {
   position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
-  width: 135px; /* Largura do quadrado */
-  height: 135px; /* Altura do quadrado */
+  width: 125px; /* Largura do quadrado */
+  height: 125px; /* Altura do quadrado */
   background-color: #F1DD86;
   border-radius: 15px;
   overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
