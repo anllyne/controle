@@ -1,25 +1,37 @@
 <ion-content>
-  <!---Menu Lateral------>
   <ion-menu contentId="main-content">
     <ion-header>
       <ion-toolbar color="tertiary">
-        <ion-title>Menu Content</ion-title>
+        <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
+  
+    <ion-content>
+      <ion-list>
+        <ion-item button routerLink="/gallery">
+          <ion-label>Galeria</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/diary">
+          <ion-label>Anotações</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/tasks">
+          <ion-label>To-Do</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
   </ion-menu>
+  
 
-  <!---Toolbar--->
+  <!-- Toolbar -->
   <div class="ion-page" id="main-content">
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-
         <div class="logo-container">
-          <ion-img src="caminho_para_sua_logo" class="logo"></ion-img> 
+          <ion-img src="https://i.ibb.co/fSshXrB/Design-sem-nome-1.png" class="logo"></ion-img> 
         </div>
-
         <ion-buttons slot="end">
           <ion-button>
             <ion-icon slot="icon-only" name="person"></ion-icon>
@@ -29,7 +41,7 @@
     </ion-header>
   </div>
 
-  <!----Card Pesquisa----->
+  <!-- Card Pesquisa -->
   <div class="card-pesquisa">
     <ion-card>
       <ion-card-header>
@@ -38,39 +50,37 @@
           <ion-card-title>Para onde vamos?</ion-card-title>
         </div>  
       </ion-card-header>
-    
       <ion-card-content>
         <ion-searchbar placeholder="Digite o lugar que deseja ir"></ion-searchbar>
       </ion-card-content>
     </ion-card>
   </div>
 
-  <!---Cards----->
+  <!-- Contêiner do Mapa -->
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+
+  <!-- Cards -->
   <div class="popular-now">
     <div class="now-title">
       <p>Nesta semana</p>
       <h1>Salvador, Bahia...</h1>
     </div>
-
     <div class="square-container">
       <div class="square1">
         <div class="square-header">
           <h3>Show de Ivete</h3>
         </div>
-        <div class="square-content"></div>
         <div class="square-footer">
-          <ion-button routerLink="/confirma"fill="clear" class="arrow-button">
+          <ion-button routerLink="/confirma" fill="clear" class="arrow-button">
             <ion-icon slot="icon-only" name="arrow-forward-circle" class="arrow-icon"></ion-icon>
           </ion-button>
         </div>
       </div>
-      
       <div class="square2">
         <div class="square-header">
           <h3>Festival do Acarajé</h3>
-        </div>
-        <div class="square-content">
-          <p> </p>
         </div>
         <div class="square-footer">
           <ion-button fill="clear" class="arrow-button">
@@ -78,7 +88,6 @@
           </ion-button>
         </div>
       </div>
-      
       <div class="square3">
         <div class="square-header">
           <h3>Feira de Artes</h3>
@@ -92,9 +101,9 @@
     </div>
   </div>
 
-  <!----Imagem----->
+  <!-- Imagem -->
   <div class="image-container">
-    <img src="https://cdn.discordapp.com/attachments/693184817386487808/1229060555688513607/stamp.png?ex=662e4ed7&is=661bd9d7&hm=8b2b84c3eb68849538eb9b2599f896475e61a2f804f64b16e537bd1b0aa0e87e&" class="centered-image">
+    <img src="https://i.ibb.co/6D3TCnh/HOME.png" class="centered-image">
     <ion-button routerLink="/cadastro" expand="block" class="centered-button">Planeje Sua Viagem</ion-button>
   </div>
 </ion-content>

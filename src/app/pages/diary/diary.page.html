@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>My Diary</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let entry of diaryEntries" (click)="viewEntry(entry)">
+      <ion-label>
+        <h2>{{ entry.date | date }}</h2>
+        <p>{{ entry.summary }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="addEntry()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+<ion-modal [isOpen]="isModalOpen">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>{{ modalTitle }}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="closeModal()">Close</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-item>
+      <ion-label position="floating">Date</ion-label>
+      <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="entry.date"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Summary</ion-label>
+      <ion-input [(ngModel)]="entry.summary"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Content</ion-label>
+      <ion-textarea [(ngModel)]="entry.content"></ion-textarea>
+    </ion-item>
+    <ion-button expand="full" (click)="saveEntry()">Save Entry</ion-button>
+  </ion-content>
+</ion-modal>

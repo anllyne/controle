@@ -18,10 +18,6 @@ const routes: Routes = [
   },
 
   {
-    path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
-  },
-  {
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
@@ -33,6 +29,16 @@ const routes: Routes = [
     path: 'confirma',
     loadChildren: () => import('./pages/confirma/confirma.module').then( m => m.ConfirmaPageModule)
   },
+  {
+    path: 'tasks',
+    loadChildren: () => import('./pages/tasks/tasks.module').then( m => m.TasksPageModule)
+  },
+  {
+    path: 'diary',
+    loadChildren: () => import('./pages/diary/diary.module').then( m => m.DiaryPageModule)
+  },
+  
+  
 ];
 
 @NgModule({

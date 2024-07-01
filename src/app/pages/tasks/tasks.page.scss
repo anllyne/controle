@@ -1,0 +1,30 @@
+ion-content {
+    --background: #FFFCF5;
+    color: white;
+  }
+  
+  ion-toolbar {
+    --background: #744de8;
+  }
+
+  ion-list {
+    --background: transparent; /* Torna a lista transparente para mostrar a imagem de fundo */
+}
+  ion-item {
+    --background: #ce50d7;
+    --color: white;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    margin: 8px 0;
+    border-radius: 8px;
+  }
+  
+  ion-item.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+  }
+  
+  ion-fab-button {
+    --background: #744de8 ;
+  }
+  

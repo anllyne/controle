@@ -1,8 +1,7 @@
 ion-content {
   --background: #FFFCF5;
-  padding-top: 30px; /* Adiciona espaço entre o conteúdo superior e o menu */
+  padding-top: 30px;
   font-family: 'Agrandir', sans-serif;
-
 }
 
 ion-toolbar {
@@ -12,6 +11,14 @@ ion-toolbar {
 ion-menu::part(container) {
   border-radius: 0 20px 20px 0;
   background-color: #FFFCF5;
+}
+
+
+
+ion-item {
+  --background: #FFFCF5; /* Cor de fundo das abas */
+  --ion-item-background: #FFFCF5; /* Cor de fundo das abas */
+  color:#323030
 }
 
 .logo-container {
@@ -32,7 +39,7 @@ ion-buttons[slot="end"] {
 }
 
 .card-pesquisa {
-  margin-top: 80px; /* Reduz a margem superior */
+  margin-top: 80px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -71,6 +78,25 @@ ion-searchbar {
   --border-radius: 20px;
 }
 
+.map-container {
+  margin: 20px auto;
+  width: 90%; /* Defina a largura máxima para 90% */
+  max-width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  border: 2px solid #ccc;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
 .popular-now {
   margin-left: 15px;
   margin-bottom: 20px;
@@ -96,40 +122,28 @@ ion-searchbar {
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
-.square1 {
-  position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
-  width: 125px; /* Largura do quadrado */
-  height: 125px; /* Altura do quadrado */
+
+.square1, .square2, .square3 {
+  position: relative;
+  width: 125px;
+  height: 125px;
   background-color: #E37EBE;
   border-radius: 15px;
-  overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: 'Agrandir Bold', sans-serif;
-  
 }
+
 .square2 {
-  position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
-  width: 125px; /* Largura do quadrado */
-  height: 125px; /* Altura do quadrado */
   background-color: #8FDCF5;
-  border-radius: 15px;
-  overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-  font-family: 'Agrandir Bold', sans-serif;
 }
+
 .square3 {
-  position: relative; /* Adiciona posição relativa para que a seta seja posicionada corretamente */
-  width: 125px; /* Largura do quadrado */
-  height: 125px; /* Altura do quadrado */
   background-color: #F1DD86;
-  border-radius: 15px;
-  overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-  font-family: 'Agrandir Bold', sans-serif;
-  
 }
+
 .square-header {
   padding: 10px;
   text-align: left;
@@ -174,14 +188,14 @@ ion-searchbar {
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-top: 10px; /* Aumenta a margem superior */
+  margin-top: 0px; 
 }
 
 .centered-image {
   max-width: 100%;
   max-height: 80vh;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .centered-button {
